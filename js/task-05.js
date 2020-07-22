@@ -13,9 +13,9 @@
 // Индия - 80 кредитов
 // Ямайка - 120 кредитов
 
-const input = prompt('Введите страну доставки товара').toLowerCase();
-const firstLetter = input.slice(0, 1);
-const country = input.replace(firstLetter, firstLetter.toUpperCase());
+const countryName = prompt('Введите страну доставки товара').toLowerCase();
+const country =
+  countryName[0].toUpperCase() + countryName.slice(1).toLowerCase();
 
 let cost;
 let notAvailable;
