@@ -33,7 +33,7 @@ if (totalSpent < 100) {
 } else if (totalSpent < 5000) {
   discount = 5;
   console.log('Серебрянный партнер, скидка 5%');
-} else if (totalSpent >= 5000) {
+} else {
   discount = 10;
   console.log('Золотой партнер, скидка 10%');
 }  
