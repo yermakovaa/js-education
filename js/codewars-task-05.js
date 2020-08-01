@@ -53,4 +53,4 @@ const array1 = [
 ];
 
 console.log(countSheeps(array1));
-  // == 17, 'There are 17 sheeps in total');
+// == 17, 'There are 17 sheeps in total');
