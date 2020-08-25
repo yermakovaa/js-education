@@ -14,16 +14,11 @@ The correct answer would be 17.
 Hint: Don't forget to check for bad values like null/undefined
 */
 
-function countSheeps(arrayOfSheep) {
-  let totalOfSheep = 0;
 
-  for (let i = 0; i < arrayOfSheep.length; i += 1) {
-    if (arrayOfSheep[i] === true) {
-      totalOfSheep += 1;
-    }
-  }
-  return totalOfSheep;
-}
+const countSheeps = arrayOfSheep =>
+  arrayOfSheep
+    .filter(filterTrue => filterTrue)
+    .reduce(totalOfSheep => totalOfSheep + 1, 0);
 
 const array1 = [
   true,
@@ -54,3 +49,16 @@ const array1 = [
 
 console.log(countSheeps(array1));
 // == 17, 'There are 17 sheeps in total');
+
+
+
+// function countSheeps(arrayOfSheep) {
+//   let totalOfSheep = 0;
+
+//   for (let i = 0; i < arrayOfSheep.length; i += 1) {
+//     if (arrayOfSheep[i] === true) {
+//       totalOfSheep += 1;
+//     }
+//   }
+//   return totalOfSheep;
+// }
